@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI計算機</title>
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="flex-container">
+        <div class="bmiCalc">
+            <img class="bmi_cover" src="bmi_cover.jpg">
+                <a href="http://www.freepik.com">Designed by pch.vector / Freepik</a>
+            <div class="inputForm">
+                <h1>身體質量指數 (BMI) 計算器</h1>
+                <p>世界衛生組織建議以身體質量指數 (Body Mass Index, BMI) 來衡量肥胖程度，其計算公式是以體重 (公斤) 除以身高 (公尺) 的平方。</p>
+                <div class="inputDiv">
+                    <label>身高（公分）
+                        <input type="number" min="0" id="height" placeholder="請輸入身高">
+                    </label>
+                    <label>體重（公斤）
+                        <input type="number" min="0" id="weight" placeholder="請輸入體重">
+                    </label>
+                    <div>
+                        <button type="submit" id="submitBtn">提交</button>
+                        <button type="reset" id="clearBtn">清除內容</button>
+                    </div>
+                </div>
+                <div class="resultDiv">
+                    <h2>測量紀錄</h2>
+                    <p class="bmiCount"></p>
+                </div>
+            </div>
+            
+        </div>
+        <div class="bmiInfo">
+            <h2>我是18歲 (含) 以上的成人，要如何判斷體重是否正常？</h2>
+            <div>
+                <p>BMI < 18.5</p>
+                <p>「體重過輕」，需要多運動，均衡飲食，以增加體能，維持健康！</p>
+            </div>
+            <div>
+                <p>18.5 ≤ BMI < 24</p>
+                <p>恭喜！「健康體重」，要繼續保持！</p>
+            </div>
+            <div>
+                <p>24 ≤ BMI < 27</p>
+                <p>「體重過重」了，要小心囉，趕快力行「健康體重管理」！</p>
+            </div>
+            <div>
+                <p>BMI ≥ 27</p>
+                <p>啊～「肥胖」，需要立刻力行「健康體重管理」囉！</p>
+            </div>
+            <p>資料來源：衛生福利部國民健康署</p>
+            <p>想知道自己的每日總消耗熱量嗎？ </p>
+            <a href="https://tools.heho.com.tw/bmr/">基礎代謝率 (BMR) 計算機</a>
+            <h3>什麼是BMI？</h3>
+            <p>BMI（Body Mass Index）亦稱為「體重指標」，是用來評估體重是否理想和衡量肥胖程度的指標。
+                在19世紀，比利時數理學者 Adolphe Quetelet 提出「體重除以身高的二次方」的體重指標，在1972年研究人員Ancel Keys把Quetelet 的算式命名為「BMI 」，並引用其為量度過重和肥胖的指標，一直被引用至今。</p>
+            <h4>BMI過高或過低有何健康問題？</h4>
+            <p>無論體重過輕或過重，都會引致不同的健康問題，嚴重者甚至可導致死亡。
+                若體重過重，引致肥胖並對健康造成不良影響，增加患上以下疾病的風險：</p>
+            <ul>
+                <li>糖尿病</li>
+                <li>高血壓及心血管疾病</li>
+                <li>膽囊疾病</li>
+                <li>關節炎</li>
+                <li>癌症，如結腸癌或乳腺癌</li>
+                <li>抑鬱等精神或心理疾病</li>
+            </ul>
+            <p>若體重過輕，會因營養不良而增加患上以下疾病的風險：</p>
+            <ul>
+                <li>免疫功能受損</li>
+                <li>呼吸系統疾病</li>
+                <li>消化系統疾病</li>
+                <li>癌症</li>
+                <li>骨質疏鬆症</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

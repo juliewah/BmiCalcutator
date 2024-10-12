@@ -1,0 +1,48 @@
+*{
+    font-family: "Noto Sans TC", sans-serif;
+}
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    margin: 0 20px;
+}
+.bmiCalc, .bmiInfo{
+    flex: 1;
+}
+#height, #weight{
+    width: 100%;
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 4px;
+}
+.bmi_cover{
+    width: 100%;
+}
+.inputForm{
+    padding: 12px;
+    border: 3px solid #005468;
+    border-radius: 38px;
+    background-color: #f8f8f8;
+}
+input{
+        border: 1px solid #ced4da;
+}
+.calResult{
+    border: 1px solid;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 6px;
+}
+.underweight{
+    color: blue;
+}
+.healthy{
+    color: green;
+}
+.overweight{
+    color: blueviolet;
+}
+.obese{
+    color: red;
+}
